@@ -1,14 +1,3 @@
-//console.log("hola");
-//dato nombre
-//const nombreUsuario = document.getElementById("nombre").value
-//console.log(nombreUsuario)
-//dato email
-//const eMailUsuario = document.getElementById("email").value
-//console.log(eMailUsuario)
-//dato edad
-//const edadUsuario = document.getElementById("edad").value
-//console.log(edadUsuario)
-
 document.querySelector(".fboton button[type='submit']").addEventListener("click", function (event) {
     event.preventDefault(); // Evita que el formulario se envíe automáticamente
 
