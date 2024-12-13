@@ -1,0 +1,401 @@
+/*UNIVERSAL*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+/*TITULOS*/
+h1{
+    color: blue;
+    font-size: xx-large;
+}
+h2{
+    font-size: x-large;
+    color: cornflowerblue;
+}
+h3{
+    font-size:large;
+    color: rgb(175, 175, 244);
+}
+
+/*ENCABEZADO*/
+header{
+    background: linear-gradient(to right, antiquewhite 70%, black);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.titulo{
+    padding: 0 0 0 10px;
+}
+
+/*ENCABEZADO MENU*/
+li{
+    display: inline-block;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color:crimson;
+    padding-right: 10px;
+    justify-content: end;
+    align-content: center;
+}
+
+/*PRINCIPAL*/
+main{
+    text-align: center;
+    padding-top: 10px;
+    background-image: url(IMG/LogoPerfumes.jpg);
+    background-position: center;
+}
+/*SEPARACION*/
+.nosotros-contenedor{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+/*SEPARACION TEXTO*/
+.nosotros-texto{
+    width: 350px;
+    height: auto;
+    margin: 20px;
+}
+
+.nosotros-texto p{
+    background-color: beige;
+    border: 2px dashed salmon;
+    padding: 10px;
+}
+
+/*SEPARACION IMAGEN*/
+.nosotros-imagen{
+    padding: 10px;
+    margin: 10px;
+}
+
+.nosotros-imagen img{
+    width: 500px;
+    height: auto;
+}
+.productos h2{
+    color: red;
+    font-style: italic;
+}
+
+/*TARJETA*/
+.tarjetas{
+    display: flex;
+}
+
+.card{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    overflow: hidden;
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    transform: translateY(-2%);
+}
+
+.contenido-tarjeta img{
+    width: 150px;
+    height: 150px;
+}
+
+.pie-tarjeta{
+    background-color: lightgray;
+    margin: 10px 0 0 0;
+}
+
+.pie-tarjeta a button{
+    border-radius: 50px;
+    width: 100px;
+}
+.contenido-tarjeta p{
+    font-style: italic;
+}
+
+/* SECUNDARIO*/
+aside{
+    text-align: center;
+    padding-top: 10px;
+    background: linear-gradient(white, blue, grey);
+}
+
+.recomendaciones-video iframe{
+    width: 600px;
+    height: 250px;
+}
+
+article{
+    text-align:center;
+    padding-top: 10px;
+    background: linear-gradient(grey, greenyellow);
+}
+.novedades-y-consultas-contenedor{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/*TABLA*/
+table,
+tr,
+th
+{
+    border: 2px solid grey;
+    border-collapse: collapse;
+    width: 100%;
+    background-color:lightgrey;
+}
+.tabla{
+    width: 50%;
+    justify-items: center;
+    margin: 0 10px;
+}
+
+tr{
+    width: 20px;
+}
+
+th{
+    width: 20px;
+}
+
+table img{
+    width: 100px;
+    height: 100px;
+}
+
+/*FORMULARIO*/
+.titulo-form{
+    margin: 10px;
+}
+
+.formulario{
+display: grid;
+border: 1px solid gray;
+padding: 10px;
+background-color: lightgrey;
+gap: 5px;
+width: auto;
+}
+
+.titulo-form{
+    background-color: lightgrey;
+}
+
+.formulario .fboton{
+    
+    display: flex;
+    gap: 10px;
+}
+
+.formulario .fboton button{
+    width: 100%;
+    height: 50px;
+    display: inline;
+}
+
+.consultas{
+   width: auto;
+}
+
+#mensaje{
+    max-height: 100px;
+    min-height: 100px;
+    max-width: 300px;
+    min-width: 300px;
+}
+
+formulario .edad-container {
+        display: flex;
+        align-items: center;
+}
+
+#edad{   
+width: 120px;
+
+}
+
+.resenias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background: linear-gradient(greenyellow, aquamarine);
+    padding-top: 30px;
+}
+
+.card-resenia-1,
+.card-resenia-2,
+.card-resenia-3,
+.card-resenia-4,
+.card-resenia-5,
+.card-resenia-6{
+    border: 1px dashed black;
+    padding: 5px;
+    margin: 5px;
+}
+
+.card-resenia-1{
+    color: royalblue ;
+    grid-column-start:1 ;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.card-resenia-2{
+    color: rgb(31, 86, 252) ;
+    grid-column-start:2 ;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.card-resenia-3{
+    color: rgb(10, 67, 239) ;
+    grid-column-start:3 ;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.card-resenia-4{
+    color: rgb(170, 188, 241) ;
+    grid-column-start:2 ;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.card-resenia-5{
+    color: rgb(63, 77, 118) ;
+    grid-column-start:3 ;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.card-resenia-6{
+    color: rgb(43, 68, 145) ;
+    grid-column-start:1 ;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+cite{
+    color: darkgrey;
+}
+
+footer{
+    display: flex;
+    background-color: aquamarine;
+    padding: 10px;
+    justify-content: center;
+}
+
+.contatos-titulo{ 
+    justify-items: center;
+}
+
+.contactos-link{
+    display: flex;
+    gap: 20px;
+}
+
+/*MEDIAS QUERY*/
+@media (800px > width){
+    header{ 
+        display: block;
+        justify-items: center;
+        height: auto;
+    }
+    .nosotros-contenedor,
+    .novedades-y-consultas-contenedor,
+    .tarjetas{
+        flex-direction: column;
+        justify-items: center;
+    }
+    .resenias,
+    .tabla,
+    .consultas
+    {
+        display: block;
+        justify-items: center;
+        padding: 10px 0;
+    }
+}
+
+@media (600px > width){
+    .tabla,
+    th,
+    td{
+        padding: 10px;
+    }     
+}
+
+@media  (600px > width) {
+    .formulario,
+    .nosotros-texto    
+    {
+        width: 100%;
+    }
+}
+
+@media (600px > width) {
+    .nosotros-imagen img,
+    .recomendaciones-video iframe{
+        width: 100%;
+    }
+}
+
+@media (600px > width) {
+    main{
+    background-image: none;
+    background: linear-gradient(black 1%,antiquewhite 30%, white);
+    }
+}
+
+@media (600px > width) {
+    #mensaje,
+    #mail,
+    #nombre{
+        max-width: auto;
+        min-width: auto;
+    }
+}
+
+@media(600px > width) {
+    table img{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media (600px > width) {
+    li{
+        display: block;
+        list-style: none;
+    }
+}
+
+@media( 600px > width) {
+    .contenido-tarjeta img{
+        width: 50%;
+        height: 50%;
+    }
+}

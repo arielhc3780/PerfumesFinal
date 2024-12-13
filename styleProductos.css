@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: blue;
+    font-size: xx-large;
+}
+
+/*menu*/
+header{
+    background: linear-gradient(to right, antiquewhite 70%, black);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.titulo{
+    padding: 0 0 0 10px;
+}
+
+/*ENCABEZADO MENU*/
+li{
+    display: inline-block;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color:crimson;
+    padding-right: 10px;
+    justify-content: end;
+    align-content: center;
+}
+
+/*productos*/
+
+.productos{
+    align-content: center;
+    justify-items: center;
+    background-color: rgb(205, 255, 129);
+}
+.productos h2{
+    font-size:xx-large;
+    color: red;
+    font-style: italic;
+}
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background: linear-gradient(greenyellow, aquamarine);
+    padding-top: 30px;
+}
+
+.contenido-tarjeta{
+    justify-items: center;
+    cursor: default;
+
+}
+.contenido-tarjeta img{
+    width: 150px;
+    height: 150px;
+}
+.contenido-tarjeta p{
+   color: red;
+}
+.pie-tarjeta{
+    display: flex;
+    background-color: lightgray;
+    gap: 15px;
+}
+.pie-tarjeta p{
+margin: 10px;
+}
+.pie-tarjeta a{
+    align-content: center;
+}
+.pie-tarjeta button{
+    border-radius: 50px;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6,
+.card-7,
+.card-8,
+.card-9,
+.card-10,
+.card-11,
+.card-12,
+.card-13,
+.card-14,
+.card-15,
+.card-16{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    align-items: center;
+
+}
+
+/*
+.card{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    align-items: center;
+    
+}
+
+.contenido-tarjeta img{
+    width: 150px;
+    height: 150px;
+}
+
+.pie-tarjeta{
+    background-color: lightgray;
+    margin: 10px 0 0 0;
+    
+}
+
+.pie-tarjeta a button{
+    border-radius: 50px;
+    width: 100px;
+
+}
+.contenido-tarjeta p{
+    font-style: italic;
+    
+}*/
