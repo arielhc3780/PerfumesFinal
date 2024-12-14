@@ -83,29 +83,152 @@ margin: 10px;
     border-radius: 50px;
 }
 
-.card-1,
-.card-2,
-.card-3,
-.card-4,
-.card-5,
-.card-6,
-.card-7,
-.card-8,
-.card-9,
-.card-10,
-.card-11,
-.card-12,
-.card-13,
-.card-14,
-.card-15,
+.card-1
+.card-2
+.card-3
+.card-4
+.card-5
+.card-6
+.card-7
+.card-8
+.card-9
+.card-10
+.card-11
+.card-12
+.card-13
+.card-14
+.card-15
 .card-16{
     border: 2px solid black;
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
     background-color: white;
     align-items: center;
-
 }
+
+.card-1{
+    color: royalblue ;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.card-2{
+    color: rgb(31, 86, 252) ;
+    grid-column-start:2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.card-3{
+    color: rgb(10, 67, 239) ;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.card-4{
+    color: rgb(170, 188, 241) ;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.card-5{
+    color: rgb(63, 77, 118) ;
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-row-start: ;
+    grid-row-end: ;
+}
+
+.card-6{
+    color: rgb(43, 68, 145) ;
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-row-start: ;
+    grid-row-end: ;
+}
+.card-7{
+    color: rgb(43, 68, 145) ;
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-row-start: ;
+    grid-row-end: ;
+}
+.card-8{
+    color: rgb(43, 68, 145) ;
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-row-start: ;
+    grid-row-end: ;
+}
+.card-9{
+    color: rgb(43, 68, 145) ;
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-row-start: ;
+    grid-row-end: ;
+}
+.card-10{
+    color: rgb(43, 68, 145) ;
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-row-start: ;
+    grid-row-end: ;
+}
+.card-11{
+    color: rgb(43, 68, 145) ;
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-row-start: ;
+    grid-row-end: ;
+}
+.card-12{
+    color: rgb(43, 68, 145) ;
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-row-start: ;
+    grid-row-end: ;
+}.card-13{
+    color: rgb(43, 68, 145) ;
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-row-start: ;
+    grid-row-end: ;
+}
+.card-14{
+    color: rgb(43, 68, 145) ;
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-row-start: ;
+    grid-row-end: ;
+}
+.card-15{
+    color: rgb(43, 68, 145) ;
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-row-start: ;
+    grid-row-end: ;
+}
+.card-16{
+    color: rgb(43, 68, 145) ;
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-row-start: ;
+    grid-row-end: ;
+}
+
+
+
+
+
+
+
 
 /*
 .card{
