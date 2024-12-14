@@ -21,30 +21,36 @@ h3{
 
 /*ENCABEZADO*/
 header{
-    background: linear-gradient(to right, antiquewhite 70%, black);
-    height: auto;
     display: flex;
-    align-items: center;
+    background: linear-gradient(to right, antiquewhite 70%, black);
     justify-content: space-between;
-}
-
-
-.titulo{
-    padding: 0 0 0 10px;
+    padding: 0.5rem;
 }
 
 /*ENCABEZADO MENU*/
-li{
-    display: inline-block;
-    list-style: none;
+.nav{
+    margin-top: 10px;
+}
+.nav-list li{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    justify-items: center;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: red;
 }
 
-.menu a{
-    text-decoration: none;
-    color:crimson;
-    padding-right: 10px;
-    justify-content: end;
-    align-content: center;
+.menu-abrir,
+.menu-cerrar{
+    display: none;
 }
 
 /*PRINCIPAL*/
@@ -319,11 +325,7 @@ footer{
 
 /*MEDIAS QUERY*/
 @media (800px > width){
-    header{ 
-        display: block;
-        justify-items: center;
-        height: auto;
-    }
+
     .nosotros-contenedor,
     .novedades-y-consultas-contenedor,
     .tarjetas{
@@ -345,50 +347,76 @@ footer{
     th,
     td{
         padding: 10px;
-    }     
-}
-
-@media  (600px > width) {
+    }
     .formulario,
     .nosotros-texto    
     {
         width: 100%;
     }
-}
-
-@media (600px > width) {
     .nosotros-imagen img,
     .recomendaciones-video iframe{
         width: 100%;
     }
-}
-
-@media (600px > width) {
     main{
-    background-image: none;
-    background: linear-gradient(black 1%,antiquewhite 30%, white);
-    }
-}
-
-@media (600px > width) {
-    #mensaje,
-    #mail,
-    #nombre{
-        max-width: auto;
-        min-width: auto;
-    }
-}
-
-@media(600px > width) {
+        background-image: none;
+        background: linear-gradient(black 1%,antiquewhite 30%, white);
+        }
     table img{
         width: 50%;
         height: 50%;
-    }
-}
-
-@media (600px > width) {
+        }
+    #mensaje,
+    #mail,
+    #nombre{
+            max-width: auto;
+            min-width: auto;
+        }
     li{
         display: block;
         list-style: none;
-    }
+        }
 }
+@media (635px > width){
+    header{
+        display: flex;
+    }
+
+    .menu-abrir,
+    .menu-cerrar{
+        display:block;
+        color: red;
+        border: none;
+        background-color: transparent;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    .nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 1rem;
+        background: linear-gradient( black , transparent);
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        display: flex;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav.visible{
+        visibility: hidden;
+        opacity: 1;
+    }
+    
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+
+}
+
