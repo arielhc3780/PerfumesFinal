@@ -392,10 +392,3 @@ footer{
         list-style: none;
     }
 }
-
-@media( 600px > width) {
-    .contenido-tarjeta img{
-        width: 50%;
-        height: 50%;
-    }
-}

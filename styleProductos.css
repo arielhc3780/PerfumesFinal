@@ -219,18 +219,13 @@ margin: 5px;
     }
     
     .tarjetas{
+        display: flex;
         flex-direction: column;
         justify-items: center;
-
-@media( 600px > width) {
-    .contenido-tarjeta img{
-        width: 50%;
-        height: 50%;
     }
+
+    
 }
-
-
-
 
 
 /*
