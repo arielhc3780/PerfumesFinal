@@ -1,6 +1,9 @@
 document.querySelector(".fboton button[type='submit']").addEventListener("click", function (event) {
     event.preventDefault(); // Evita que el formulario se envíe automáticamente
 
+    // Limpiar mensajes de error previos
+    document.getElementById('errorMessages').innerHTML = '';
+
     const nombre = document.getElementById("nombre").value.trim();
     const email = document.getElementById("email").value.trim();
     const mensaje = document.getElementById("mensaje").value.trim();
@@ -15,7 +18,6 @@ document.querySelector(".fboton button[type='submit']").addEventListener("click"
     } else if (!nombreRegex.test(nombre)) {
         errores.push("El campo 'Nombre' solo puede contener letras y espacios.");
     }
-
 
     // Validar email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -41,10 +43,26 @@ document.querySelector(".fboton button[type='submit']").addEventListener("click"
         errores.push("Debe seleccionar un género.");
     }
 
-    // Mostrar errores o enviar el formulario
+    // Mostrar errores dentro del formulario
     if (errores.length > 0) {
-        alert("Errores:\n" + errores.join("\n"));
+        // Mostrar los errores dentro del contenedor de mensajes
+        const errorContainer = document.getElementById('errorMessages');
+        errorContainer.innerHTML = '<ul>' + errores.map(error => `<li>${error}</li>`).join('') + '</ul>';
     } else {
-        alert("Formulario enviado correctamente.");
+        // Si no hay errores, mostrar mensaje de éxito
+        const successMessage = document.createElement('div');
+        successMessage.style.color = 'green';
+        successMessage.innerHTML = "Formulario enviado correctamente.";
+        document.getElementById('errorMessages').appendChild(successMessage);
+
+        // Limpiar los campos manualmente
+        document.getElementById("nombre").value = '';
+        document.getElementById("email").value = '';
+        document.getElementById("mensaje").value = '';
+        document.getElementById("edad").value = '';
+        
+        // Limpiar los radios seleccionados
+        const radios = document.querySelectorAll('input[name="gender"]');
+        radios.forEach(radio => radio.checked = false);
     }
 });

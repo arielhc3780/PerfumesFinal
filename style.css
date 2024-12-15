@@ -150,25 +150,25 @@ article{
 }
 .novedades-y-consultas-contenedor{
     display: flex;
-    align-items:center;
+    align-items: top;
     justify-content: center;
     gap: 30px;
 }
 
 /*TABLA*/
-table,
-tr,
-th
-{
-    border: 2px solid grey;
-    border-collapse: collapse;
-    width: 100%;
-    background-color:lightgrey;
-}
 .tabla{
     width: 50%;
     justify-items: center;
     margin: 0 10px;
+}
+
+table,
+tr,
+th{
+    border: 2px solid grey;
+    border-collapse: collapse;
+    width: 100%;
+    background-color:lightgrey;
 }
 
 tr{
@@ -185,9 +185,6 @@ table img{
 }
 
 /*FORMULARIO*/
-.titulo-form{
-    margin: 10px;
-}
 
 .formulario{
 display: grid;
@@ -195,7 +192,6 @@ border: 1px solid gray;
 padding: 10px;
 background-color: lightgrey;
 gap: 5px;
-width: auto;
 }
 
 .titulo-form{
@@ -215,14 +211,14 @@ width: auto;
 }
 
 .consultas{
-   width: auto;
+    width: auto;
 }
 
 #mensaje{
     max-height: 100px;
     min-height: 100px;
-    max-width: 300px;
-    min-width: 300px;
+    max-width: 400px;
+    min-width: 400px;
 }
 
 formulario .edad-container {
@@ -231,8 +227,17 @@ formulario .edad-container {
 }
 
 #edad{   
-width: 120px;
-
+width: 45px;
+}
+#errorMessages{
+    color: red; 
+    margin-top: 5px;
+    background-color: darkgreen;
+    text-align: left;
+}
+#errorMessages ul{
+    list-style:inside ;
+    padding: 5px;
 }
 
 .resenias{

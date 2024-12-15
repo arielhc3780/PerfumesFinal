@@ -193,9 +193,7 @@
 
             <div class="consultas">
                 <form action="https://formspree.io/f/movqqwkr" method="post">
-                    <div class="titulo-form">
-                        <h3>Consulte por su perfume</h3>
-                    </div>
+                    
                     <div class="formulario">
                         <label for="nombre">Nombre:</label>
                         <input type="text" name="nombre" placeholder="Escriba su nombre" id="nombre" required>
@@ -209,19 +207,21 @@
                         
                         <div class="edad-container">
                             <label class="edad" for="edad">Edad:</label>
-                            <input type="text" name="edad" placeholder="Escriba su edad" id="edad" required>
+                            <input type="text" name="edad" placeholder="Años" id="edad" required>
                         </div>
 
                         <div class="radio">
                             <input type="radio" name="gender" value="hombre"> Hombre
                             <input type="radio" name="gender" value="mujer"> Mujer
-                            <input type="radio" name="gender" value="otro"> Otro
+                            <input type="radio" name="gender" value="otro"> Niños\as
                         </div>
                         <div class="fboton">
                             <button type="submit">Enviar</button>
                             <button type="reset">Borrrar</button>
                         </div>
                     </div>
+                    
+                    <div id="errorMessages"></div>
                 </form>
             </div>
         </div>
