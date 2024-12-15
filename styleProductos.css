@@ -90,8 +90,9 @@ header{
 .pie-tarjeta{
     display: flex;
     background-color: lightgray;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
+    padding: 5px;
 }
 .pie-tarjeta p{
     margin: 5px;
@@ -256,7 +257,6 @@ footer{
         display: flex;
         flex-direction: column;
         justify-items: center;
-        
     }
 }    
 @media (635px > width){
