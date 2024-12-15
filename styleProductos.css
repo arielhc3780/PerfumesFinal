@@ -1,21 +1,36 @@
-body{
+*{
     margin: 0;
     padding: 0;
+    font-family: "Roboto Flex", sans-serif;
 }
 h1{
     color: blue;
     font-size: xx-large;
+}
+h2{
+    font-size: x-large;
+    color: cornflowerblue;
+}
+h3{
+    font-size:large;
+    color: rgb(175, 175, 244);
 }
 
 /*menu*/
 
 
 header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     background: linear-gradient(to right, antiquewhite 70%, black);
-    align-items: center;
     justify-content: space-between;
     padding: 0.5rem;
+    
 }
 
 /*ENCABEZADO MENU*/
@@ -37,21 +52,9 @@ header{
 }
 
 
-/*
-li{
-    display: inline-block;
-    list-style: none;
-}
 
-.menu a{
-    text-decoration: none;
-    color:crimson;
-    padding-right: 10px;
-    justify-content: end;
-    align-content: center;
-}
-*/
 /*productos*/
+
 
 .productos{
     align-content: center;
@@ -59,9 +62,9 @@ li{
     background-color: rgb(205, 255, 129);
 }
 .productos h2{
-    font-size:xx-large;
     color: red;
     font-style: italic;
+    padding-top: 80px;
 }
 
 .tarjetas{
@@ -223,6 +226,22 @@ li{
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
+}
+
+footer{
+    display: flex;
+    background-color: aquamarine;
+    padding: 10px;
+    justify-content: center;
+}
+
+.contatos-titulo{ 
+    justify-items: center;
+}
+
+.contactos-link{
+    display: flex;
+    gap: 20px;
 }
 
 /*MEDIA QUERYS*/
