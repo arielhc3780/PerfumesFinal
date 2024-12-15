@@ -74,11 +74,6 @@ header{
     background: linear-gradient(greenyellow, aquamarine);
     padding-top: 10px;
 }
-/*.tarjetas{
-    
-    background: linear-gradient(greenyellow, aquamarine);
-    padding-top: 10px;
-}*/
 
 .contenido-tarjeta{
     justify-items: center;
@@ -96,6 +91,7 @@ header{
     display: flex;
     background-color: lightgray;
     gap: 10px;
+    align-items: center;
 }
 .pie-tarjeta p{
     margin: 5px;
