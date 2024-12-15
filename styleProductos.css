@@ -67,6 +67,13 @@ header{
     padding-top: 80px;
 }
 
+#productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background: linear-gradient(greenyellow, aquamarine);
+    padding-top: 10px;
+}
 .tarjetas{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -85,7 +92,7 @@ header{
     height: 150px;
 }
 .contenido-tarjeta p{
-   color: red;
+    color: red;
 }
 .pie-tarjeta{
     display: flex;
