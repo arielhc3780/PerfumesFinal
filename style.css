@@ -160,6 +160,8 @@ article{
     width: 50%;
     justify-items: center;
     margin: 0 10px;
+    height: 100%;
+    width: 100%;
 }
 
 table,
@@ -171,9 +173,6 @@ th{
     background-color:lightgrey;
 }
 
-tr{
-    width: 20px;
-}
 
 th{
     width: 20px;
@@ -182,6 +181,7 @@ th{
 table img{
     width: 100px;
     height: 100px;
+    margin: 12px;
 }
 
 /*FORMULARIO*/
@@ -229,15 +229,15 @@ formulario .edad-container {
 #edad{   
 width: 45px;
 }
+
 #errorMessages{
     color: red; 
     margin-top: 5px;
-    background-color: darkgreen;
     text-align: left;
 }
 #errorMessages ul{
     list-style:inside ;
-    padding: 5px;
+    padding: 8px;
 }
 
 .resenias{
