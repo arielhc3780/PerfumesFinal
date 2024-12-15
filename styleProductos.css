@@ -74,13 +74,11 @@ header{
     background: linear-gradient(greenyellow, aquamarine);
     padding-top: 10px;
 }
-.tarjetas{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+/*.tarjetas{
+    
     background: linear-gradient(greenyellow, aquamarine);
     padding-top: 10px;
-}
+}*/
 
 .contenido-tarjeta{
     justify-items: center;
@@ -97,19 +95,17 @@ header{
 .pie-tarjeta{
     display: flex;
     background-color: lightgray;
-    gap: 50px;
+    gap: 10px;
 }
 .pie-tarjeta p{
     margin: 5px;
+    color: black;
 }
-.pie-tarjeta a{
-    align-content: center;
-}
-.pie-tarjeta button{
+.pie-tarjeta input{
+    color: red;
     border: none;
-}
-.pie-tarjeta button{
-    background-color: yellow;
+    background-color: rgb(242, 189, 189);
+    border-radius: 10px;
 }
 
 .card-1,
@@ -253,17 +249,18 @@ footer{
 
 /*MEDIA QUERYS*/
 
-@media (800px > width){
+@media (900px > width){
     header{ 
         display: flex;
         justify-items: center;
         justify-content: space-between;
     }
     
-    .tarjetas{
+    #productos{
         display: flex;
         flex-direction: column;
         justify-items: center;
+        
     }
 }    
 @media (635px > width){
