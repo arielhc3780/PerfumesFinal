@@ -265,17 +265,25 @@ header{
     border-style: solid;
     border: 2px solid black;
 }
+.formasdepagos h3{
+    color: black;
+}
+.tarjetascreditoydebito,
+.transferencia,
+.billetera{
+    justify-items: center;
+}
 .tarjetascreditoydebito img{
     height: auto;
-    width: 5rem;
+    width: 4rem;
 }
 .transferencia img{
     height: auto;
-    width: 5rem;
+    width: 4rem;
 }
 .billetera img{
     height: auto;
-    width: 5rem;
+    width: 4rem;
 }
 
 /*FOOTER*/
@@ -312,7 +320,6 @@ footer{
     header{
         display: flex;
     }
-
     .nav{
         opacity: 0;
         visibility: hidden;
@@ -324,12 +331,13 @@ footer{
         top: 0;
         right: 0;
         background-color: lightgray;
-        padding: 1rem;
+        padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     }
     .nav.visible{
-        visibility: hidden;
+        visibility: visible;
         opacity: 1;
+        
     }
     .nav-list{
         flex-direction: column;
@@ -338,7 +346,6 @@ footer{
     .nav-list li a{
         color: black;
     }
-    
     .menu-abrir,
     .menu-cerrar{
         display: block;
