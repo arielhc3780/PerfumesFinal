@@ -119,13 +119,13 @@ main{
 }
 
 .pie-tarjeta{
-    background-color: lightgray;
     margin: 10px 0 0 0;
 }
 
 .pie-tarjeta a button{
     border-radius: 50px;
-    width: 100px;
+    width: auto;
+    padding: 0 5px;
 }
 .contenido-tarjeta p{
     font-style: italic;
@@ -350,6 +350,48 @@ footer{
     }
 }
 
+@media (635px > width){
+    header{
+        display: flex;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: lightgray;
+        padding: 1rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+    .nav.visible{
+        visibility: hidden;
+        opacity: 1;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+    .nav-list li a{
+        color: black;
+    }
+    
+    .menu-abrir,
+    .menu-cerrar{
+        display: block;
+        color: white;
+        border: none;
+        background-color: transparent;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
 @media (600px > width){
     .formulario,
     .nosotros-texto    
@@ -375,43 +417,3 @@ footer{
         display: none;
     }
 }
-
-@media (635px > width){
-    header{
-        display: flex;
-    }
-    .menu-abrir,
-    .menu-cerrar{
-        display: block;
-        color: red;
-        border: none;
-        background-color: transparent;
-        font-size: 30px;
-        cursor: pointer;
-    }
-    .nav{
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        padding: 1rem;
-        background: linear-gradient( black , transparent);
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        display: flex;
-    }
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-    }
-    .nav.visible{
-        visibility: hidden;
-        opacity: 1;
-    }
-    .nav-list{
-        flex-direction: column;
-        align-items: end;
-    }
-}
-
