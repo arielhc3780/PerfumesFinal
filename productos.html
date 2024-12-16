@@ -32,7 +32,17 @@
                     
                     <li><a href="#contacto"><i class="fa-solid fa-address-book"></i></i> Contactos</a></li>
                     
-                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
+                    <button onclick="abrirModal()">Abrir Pop-up</button>
+                    <!-- Modal -->
+                    <div id="miModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="cerrarModal()">×</span>
+                            <h2>¡Bienvenido al Pop-up!</h2>
+                            <p>Este es un pop-up modal que aparece dentro de la misma página.</p>
+                        </div>
+                    </div>
+
+                    <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
                 </ul>
             </nav>
         </div>
@@ -108,6 +118,7 @@
 
     <script src="scriptmenu.js"></script>
     <script src="scriptproductos.js"></script>
+    <script src="carrito.js"></script>
 </body>
 </html>
 
