@@ -7,16 +7,16 @@
 
 /*TITULOS*/
 h1{
-    color: blue;
+    color: white;
     font-size: xx-large;
 }
 h2{
     font-size: x-large;
-    color: cornflowerblue;
+    color: white;
 }
 h3{
     font-size:large;
-    color: rgb(175, 175, 244);
+    color: white
 }
 
 /*ENCABEZADO*/
@@ -29,7 +29,7 @@ header{
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
-    background: linear-gradient(to right, antiquewhite 70%, black);
+    background: linear-gradient(darkgrey, black);
     justify-content: space-between;
     padding: 0.5rem;
 }
@@ -44,7 +44,7 @@ header{
 }
 .nav-list li a{
     text-decoration: none;
-    color: red;
+    color: white;
 }
 
 .menu-abrir,
@@ -56,8 +56,7 @@ header{
 main{
     text-align: center;
     padding-top: 80px;
-    background-image: url(IMG/LogoPerfumes.jpg);
-    background-position: center;
+    background-color: lightgrey;
 }
 /*SEPARACION*/
 .nosotros-contenedor{
@@ -68,19 +67,24 @@ main{
 
 /*SEPARACION TEXTO*/
 .nosotros-texto{
+    flex: 6;
     width: 350px;
     height: auto;
     margin: 20px;
 }
 
 .nosotros-texto p{
-    background-color: beige;
-    border: 2px dashed salmon;
+    background-color: darkgray;
+    border: 2px dashed black;
+    border-radius: 8px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
     padding: 10px;
 }
 
 /*SEPARACION IMAGEN*/
 .nosotros-imagen{
+    flex: 6;
     padding: 10px;
     margin: 10px;
 }
@@ -90,7 +94,6 @@ main{
     height: auto;
 }
 .productos h2{
-    color: red;
     font-style: italic;
 }
 
@@ -135,9 +138,12 @@ main{
 aside{
     text-align: center;
     padding-top: 10px;
-    background: linear-gradient(white, blue, grey);
+    background-color: lightgray;
 }
 
+.recomendaciones-video{
+    flex:6;
+}
 .recomendaciones-video iframe{
     width: 600px;
     height: 250px;
@@ -146,17 +152,18 @@ aside{
 article{
     text-align:center;
     padding-top: 10px;
-    background: linear-gradient(grey, greenyellow);
+    background-color: lightgrey;
 }
 .novedades-y-consultas-contenedor{
     display: flex;
     align-items: top;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 /*TABLA*/
 .tabla{
+    flex:6;
     width: 50%;
     justify-items: center;
     margin: 0 10px;
@@ -167,8 +174,9 @@ article{
 table,
 tr,
 th{
-    border: 2px solid grey;
+    border: 1px solid grey;
     border-collapse: collapse;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     width: 100%;
     background-color:lightgrey;
 }
@@ -188,10 +196,13 @@ table img{
 
 .formulario{
 display: grid;
-border: 1px solid gray;
+border: 2px solid black;
 padding: 10px;
-background-color: lightgrey;
+background-color: darkgrey;
 gap: 5px;
+border-radius: 10px;
+box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+transition: background-color 0.3s ease;
 }
 
 .titulo-form{
@@ -211,14 +222,16 @@ gap: 5px;
 }
 
 .consultas{
+    flex: 6;
     width: auto;
+    padding: 0 20px 0 0;
 }
 
 #mensaje{
     max-height: 100px;
     min-height: 100px;
-    max-width: 400px;
-    min-width: 400px;
+    max-width: 600px;
+    min-width: 600px;
 }
 
 formulario .edad-container {
@@ -244,7 +257,7 @@ width: 45px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    background: linear-gradient(greenyellow, aquamarine);
+    background-color: lightgrey;
     padding-top: 30px;
 }
 
@@ -254,13 +267,14 @@ width: 45px;
 .card-resenia-4,
 .card-resenia-5,
 .card-resenia-6{
-    border: 1px dashed black;
+    border: 2px dashed black;
+    border-radius: 10px;
     padding: 5px;
     margin: 5px;
 }
 
 .card-resenia-1{
-    color: royalblue ;
+    color: black ;
     grid-column-start:1 ;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -268,7 +282,7 @@ width: 45px;
 }
 
 .card-resenia-2{
-    color: rgb(31, 86, 252) ;
+    color: black ;
     grid-column-start:2 ;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -276,7 +290,7 @@ width: 45px;
 }
 
 .card-resenia-3{
-    color: rgb(10, 67, 239) ;
+    color: black ;
     grid-column-start:3 ;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -284,7 +298,7 @@ width: 45px;
 }
 
 .card-resenia-4{
-    color: rgb(170, 188, 241) ;
+    color: black ;
     grid-column-start:2 ;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -292,7 +306,7 @@ width: 45px;
 }
 
 .card-resenia-5{
-    color: rgb(63, 77, 118) ;
+    color: black ;
     grid-column-start:3 ;
     grid-column-end: 4;
     grid-row-start: 2;
@@ -300,7 +314,7 @@ width: 45px;
 }
 
 .card-resenia-6{
-    color: rgb(43, 68, 145) ;
+    color: black;
     grid-column-start:1 ;
     grid-column-end: 3;
     grid-row-start: 3;
@@ -313,7 +327,7 @@ cite{
 
 footer{
     display: flex;
-    background-color: aquamarine;
+    background-color: lightgray;
     padding: 10px;
     justify-content: center;
 }

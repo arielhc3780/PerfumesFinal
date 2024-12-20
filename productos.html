@@ -25,15 +25,13 @@
         <div>
             <nav class="nav" id="nav">
                 <button class="menu-cerrar" id="cerrar"><i class="bi bi-x-square"></i></button>
-                <ul class="nav-list">
-                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                <div class="nav-list">
+                
+                    <a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
 
-                    <li><a href="productos.html"><i class="fa-solid fa-list"></i> Productos</a></li>
+                    <span class="btn-contacto"><a href="#contacto"><i class="fa-solid fa-address-book"></i></i> Contactos</a></li>
 
-                    <li><a href="#contacto"><i class="fa-solid fa-address-book"></i></i> Contactos</a></li>
-
-                    <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i> Carrito</a></li>
-                </ul>
+                </div>
             </nav>
         </div>
         <button class="menu-abrir" id="abrir"><i class="bi bi-list"></i></button>
@@ -41,42 +39,44 @@
     
     <main>
         <div class="productos">
-            <div>
-                <h2>Nuestros productos</h2>
-            </div>
+            
             <div  id="productos" class="tarjetas"></div>
             
         </div>    
             
     </main>
 
-    <article class="pagos">
-        <div class="tituloformapago">
-            <h2>Formas de pago</h2>
+    <article class="container-pagos-y-carrito">
+        <div id="carrito" class="column carrito">
+            <h2>Tu Carrito de Compras</h2>
+            
+            <ul></ul>
+            
+            <p id="mensaje"></p>
+            
+            <p id="total">Total a pagar: $0</p>
+            
+            <button id="btn-borrar">Vaciar carrito</button>
+            
+            <button id="btn-ir-a-pagar">Ir a Pagar</button>
+            
         </div>
-        <div class="formasdepagos">
-            <div class="tarjetascreditoydebito">
-                <h3>Tarjetas de credito o debito</h3>
-                <div>
-                    <img src="ICONOS/american-express.png" alt="americanexpress">
-                    <img src="ICONOS/mastercard.png" alt="mastercard">
-                    <img src="ICONOS/visa.png" alt="visa">
-                </div>
+        
+        <div class="column-formas-de-pago">
+            <div class="tituloformapago">
+                <h2>Formas de pago</h2>
             </div>
-            <div class="transferencia">
-                <h3>Transferencia bancaria</h3>
-                <div>
-                    <img src="ICONOS/banca-en-linea.png" alt="banco">
-                </div>
-            </div>
-            <div class="billetera">
-                <h3>Billetera virtual</h3>
-                <div>
-                    <img src="ICONOS/MercadoPago.png" alt="mercadopago">
-                    <img src="ICONOS/cuenta-dni.png" alt="cuentadni">
-                </div>
+        
+            <div class="formasdepagos">
+                <img src="ICONOS/american-express.png" alt="americanexpress">
+                <img src="ICONOS/mastercard.png" alt="mastercard">
+                <img src="ICONOS/visa.png" alt="visa">
+                <img src="ICONOS/banca-en-linea.png" alt="banco">
+                <img src="ICONOS/MercadoPago.png" alt="mercadopago">
+                <img src="ICONOS/cuenta-dni.png" alt="cuentadni">
             </div>
         </div>
+
     </article>
 
     <footer>

@@ -110,7 +110,7 @@ for(let indice = 0; indice < productos.length; indice++){
                     <p>Precio: $${productos[indice].valor}</p>
                 </div>
                 <div>
-                    <input id="btnAgregarCarrito" type="button" value="Agregar al carrito">
+                    <input class="btnAgregarCarrito" type="button" value="Agregar al carrito">
                 </div>
             </div>
         </div>
