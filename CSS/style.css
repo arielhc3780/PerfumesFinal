@@ -7,8 +7,9 @@
 
 /*TITULOS*/
 h1{
-    color: white;
+    color: #D4AF37;
     font-size: xx-large;
+    font-family: 'Playfair Display', serif;
 }
 h2{
     font-size: x-large;
@@ -63,35 +64,39 @@ main{
     display: flex;
     align-items:center;
     justify-content: center;
+    gap: 20px;
 }
 
 /*SEPARACION TEXTO*/
 .nosotros-texto{
-    flex: 6;
-    width: 350px;
-    height: auto;
-    margin: 20px;
+    flex: 5;
+    padding: 0px 0 0 0;
+    /* width: 350px;
+    height: auto; */
+    margin: 0 0 0 10px;
 }
 
 .nosotros-texto p{
     background-color: darkgray;
     border: 2px dashed black;
     border-radius: 8px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-    padding: 10px;
 }
 
-/*SEPARACION IMAGEN*/
+    /*SEPARACION IMAGEN*/
 .nosotros-imagen{
-    flex: 6;
-    padding: 10px;
-    margin: 10px;
+    flex: 7;
+    margin: 0 10px 0 0 ;
+    /* padding: 0 0px 0 0; */
+    
 }
 
 .nosotros-imagen img{
-    width: 500px;
+    width: 600px;
     height: auto;
+}
+
+.productos{
+    margin-top: 10px;
 }
 .productos h2{
     font-style: italic;
@@ -137,13 +142,13 @@ main{
 /* SECUNDARIO*/
 aside{
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
     background-color: lightgray;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 
-.recomendaciones-video{
-    flex:6;
-}
 .recomendaciones-video iframe{
     width: 600px;
     height: 250px;
@@ -356,7 +361,6 @@ footer{
         justify-items: center;
     }
     .resenias,
-    .tabla,
     .consultas
     {
         display: block;
@@ -412,26 +416,20 @@ footer{
 }
 
 @media (600px > width){
-    .formulario,
-    .nosotros-texto    
-    {
-        width: 100%;
+    .formulario{
+        width: auto;
     }
-    .nosotros-imagen img,
-    .recomendaciones-video iframe{
-        width: 100%;
+    .nosotros-texto,    
+    .nosotros-imagen img{
+        width: 80%;
+        margin: 0 10px;
     }
-    main{
-        background-image: none;
-        background: linear-gradient(black 1%,antiquewhite 30%, white);
-        }
-    
     #mensaje,
     #mail,
     #nombre{
             max-width: auto;
             min-width: auto;
-        }
+    }    
     aside{
         display: none;
     }
