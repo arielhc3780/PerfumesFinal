@@ -82,34 +82,68 @@ main{
     transition: background-color 0.3s ease;
 }
 
-/*TARJETAS*/
-.contenido-tarjeta{
-    justify-items: center;
-    cursor: default;
-}
-.contenido-tarjeta img{
-    width: 150px;
-    height: 150px;
-}
-.contenido-tarjeta p{
-    color: red;
-}
-.pie-tarjeta{
+.card-{
     display: flex;
-    background-color: lightgray;
-    gap: 5px;
+    flex-direction: column;
     align-items: center;
-    padding: 5px;
+    justify-content: space-between;
+    border: 1px solid #d1d5db; /* Gris claro para un borde profesional */
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 300px;
+    margin: 16px auto; /* Centrando horizontalmente */
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
-.pie-tarjeta p{
-    margin: 5px;
-    color: black;
+
+.contenido-tarjeta {
+    text-align: center;
 }
-.pie-tarjeta input{
-    color: red;
+
+.contenido-tarjeta h3 {
+    font-size: 1.25rem;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.contenido-tarjeta img {
+    width: 200px;
+    height: 200px;
+}
+
+
+.contenido-tarjeta p {
+    font-size: 1rem;
+    color: #6b7280;
+    padding-top: 1rem;
+    margin-bottom: 15px;
+}
+
+.pie-tarjeta {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pie-tarjeta p {
+    font-size: 1rem;
+    color: #1f2937;
+    padding-top: 1rem;
+}
+
+.btnAgregarCarrito {
+    background-color: #2563eb;
+    color: #ffffff;
     border: none;
-    background-color: rgb(242, 189, 189);
-    border-radius: 10px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnAgregarCarrito:hover {
+    background-color: #1d4ed8;
 }
 
 /*CARDS*/
@@ -119,7 +153,15 @@ main{
     padding: 5px;
     background-color: white;
     align-items: center;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    max-width: 300px;
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+} */
 
 article{
     background-color: lightgrey;
