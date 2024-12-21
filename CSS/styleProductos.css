@@ -341,16 +341,13 @@ footer{
         grid-template-rows: repeat(auto, 1fr);
         
     } 
-    .container-pagos-y-carrito {
-            flex-direction: column; 
-        }
-    .column-formas-de-pago{
-            margin: 0 0 50px 0;
-        }
-        .column.carrito {
-            margin: 50px 0 0 0;
-        }
+
+    article{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+}    
 
 @media (635px > width){
     header{
@@ -395,5 +392,18 @@ footer{
         display: flex;
         flex-direction: column;
         justify-items: center;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .column-formas-de-pago{
+        margin: 0 0 20px 0;
+    }
+    .column.carrito {
+        margin: 20px 0 0 0;
     }
 }
