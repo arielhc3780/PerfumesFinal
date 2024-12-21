@@ -87,13 +87,13 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #d1d5db; /* Gris claro para un borde profesional */
+    border: 1px solid #d1d5db;
     border-radius: 8px;
     padding: 16px;
     max-width: 300px;
-    margin: 16px auto; /* Centrando horizontalmente */
-    background-color: #ffffff; /* Fondo blanco */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 16px auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contenido-tarjeta {
@@ -124,6 +124,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 5px;
 }
 
 .pie-tarjeta p {
@@ -137,7 +138,7 @@ main{
     color: #ffffff;
     border: none;
     border-radius: 4px;
-    padding: 8px 16px;
+    padding: 2px 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -159,8 +160,8 @@ main{
     justify-content: space-between;
     border-radius: 8px;
     max-width: 300px;
-    background-color: #ffffff; /* Fondo blanco */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 } */
 
 article{
@@ -172,10 +173,10 @@ article{
     /* max-width: 600px; */
     margin: 50px auto;
     background-color: #fff;
-    border: 1px solid #ccc; /* Borde para separar visualmente */
+    border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 
@@ -264,8 +265,8 @@ button#btn-ir-a-pagar:hover {
 
 /* Contenedor principal */
 .container-pagos-y-carrito {
-    display: flex; /* Flexbox para organizar las columnas */
-    gap: 50px; /* Espaciado entre columnas */
+    display: flex;
+    gap: 50px;
     padding: 0 50px 0 50px;
 }
 
@@ -275,10 +276,10 @@ button#btn-ir-a-pagar:hover {
     /* max-width: 600px; */
     margin: 50px auto;
     background-color: #fff;
-    border: 1px solid #ccc; /* Borde para separar visualmente */
+    border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 /* Estilo para el título */
@@ -293,17 +294,17 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto, 1fr);
-    gap: 30px; /* Espaciado entre imágenes */
-    align-items: end; /* Alinea las imágenes a la izquierda */
+    gap: 30px;
+    align-items: end;
     justify-items: center;    
 }
 
 
 /* Estilo para los íconos */
 .formasdepagos img {
-    width: 50px; /* Ajusta el tamaño de los íconos */
+    width: 50px;
     height: auto;
-    margin: 5px; /* Espaciado entre íconos */
+    margin: 5px;
 }
 
 /* Diseño responsivo */
@@ -334,16 +335,19 @@ footer{
     }
     
     #productos{
-        /* display: flex;
-        flex-direction: column;
-        justify-items: center;*/
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(auto, 1fr);
         
     } 
     .container-pagos-y-carrito {
-            flex-direction: column; /* Cambia las columnas a filas en pantallas pequeñas */
+            flex-direction: column; 
+        }
+    .column-formas-de-pago{
+            margin: 0 0 50px 0;
+        }
+        .column.carrito {
+            margin: 50px 0 0 0;
         }
     }
 
