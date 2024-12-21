@@ -1,0 +1,154 @@
+/*UNIVERSAL*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+/*TITULOS*/
+h1{
+    color: white;
+    font-size: xx-large;
+}
+h2{
+    font-size: x-large;
+    color: white;
+}
+h3{
+    font-size:large;
+    color: black;
+}
+
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    background: linear-gradient(darkgrey, black);
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+/*ENCABEZADO MENU*/
+
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    justify-items: center;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-abrir,
+.menu-cerrar{
+    display: none;
+}
+
+main{
+    padding-top: 50px;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+/* .titulo-main{
+    position: fixed;
+    top:50px;
+} */
+.titulo-main h3{
+    font-size: 100px;
+    /* padding-top: 10px; */
+}
+
+article{
+    background-color: lightgrey;
+
+}
+.icon{
+    text-align: center;
+}
+
+.icon i{
+    color: orange;
+    font-size: 12rem;
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    background-color: lightgray;
+    padding: 10px;
+    justify-content: center;
+
+}
+/*FOOTER CONTENIDO*/
+.contatos-titulo{ 
+    justify-items: center;
+}
+.contactos-link{
+    display: flex;
+    gap: 20px;
+}
+
+@media (900px > width){
+    .titulo-main h3{
+        font-size: 50px;
+        padding-top: 50px;
+    }
+}
+
+@media (635px > width){
+    header{
+        display: flex;
+    }
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: lightgray;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+    .nav.visible{
+        visibility: visible;
+        opacity: 1;
+        
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+    .nav-list li a{
+        color: black;
+    }
+    .menu-abrir,
+    .menu-cerrar{
+        display: block;
+        color: white;
+        border: none;
+        background-color: transparent;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+@media (400px > width){
+    .titulo-main h3{
+        font-size: 30px;
+        padding-top: 50px;
+    }
+}

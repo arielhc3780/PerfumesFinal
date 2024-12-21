@@ -29,7 +29,7 @@ function actualizarVistaCarrito() {
 
     for (const [indice, { nombre, valor, cantidad }] of Object.entries(carrito)) {
         const elementoLi = document.createElement("li");
-        elementoLi.textContent = `Perfume ${nombre} - $${valor} x ${cantidad} (Total: $${(valor * cantidad).toFixed(2)})`;
+        elementoLi.textContent = `Perfume ${nombre}: $${valor} x ${cantidad} (Total: $${(valor * cantidad).toFixed(2)})`;
 
         // Crear botón de eliminar
         const botonEliminar = document.createElement("button");
