@@ -226,6 +226,11 @@ transition: background-color 0.3s ease;
     width: auto;
     padding: 0 20px 0 0;
 }
+.radio{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
 
 #mensaje{
     max-height: 100px;
@@ -240,17 +245,17 @@ formulario .edad-container {
 }
 
 #edad{   
-width: 45px;
+width: 50px;
 }
 
 #errorMessages{
     color: red; 
-    margin-top: 5px;
+    margin-top: 1px;
     text-align: left;
 }
 #errorMessages ul{
-    list-style:inside ;
-    padding: 8px;
+    list-style: none;
+    padding: 1px;
 }
 
 .resenias{

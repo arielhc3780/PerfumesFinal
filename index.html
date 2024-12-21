@@ -195,25 +195,34 @@
                     
                     <div class="formulario">
                         <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre" placeholder="Escriba su nombre" id="nombre" required>
+                        <input type="text" name="nombre" placeholder=" Escriba su nombre" id="nombre" required>
 
                         <label for="email">Email:</label>
-                        <input type="email" name="email" placeholder="Escriba su mail" id="email" required>
+                        <input type="email" name="email" placeholder=" Escriba su mail" id="email" required>
 
                         <label for="mensaje">Mensaje:</label>
-                        <textarea name="mensaje" placeholder="Escriba su consulta aqui" id="mensaje"
+                        <textarea name="mensaje" placeholder=" Escriba su consulta aqui" id="mensaje"
                             required></textarea>
                         
                         <div class="edad-container">
                             <label class="edad" for="edad">Edad:</label>
-                            <input type="text" name="edad" placeholder="Años" id="edad" required>
+                            <input type="text" name="edad" placeholder=" Años" id="edad" required>
                         </div>
 
                         <div class="radio">
-                            <input type="radio" name="gender" value="hombre"> Hombre
-                            <input type="radio" name="gender" value="mujer"> Mujer
-                            <input type="radio" name="gender" value="otro"> Niños\as
+                            <label for="gender-hombre">
+                                <input id="gender-hombre" type="radio" name="gender" value="hombre"> Hombre
+                            </label>
+                        
+                            <label for="gender-mujer">
+                                <input id="gender-mujer" type="radio" name="gender" value="mujer"> Mujer
+                            </label>
+                        
+                            <label for="gender-otro">
+                                <input id="gender-otro" type="radio" name="gender" value="otro"> Niños\as
+                            </label>
                         </div>
+                        
                         <div class="fboton">
                             <button type="submit">Enviar</button>
                             <button type="reset">Borrrar</button>
