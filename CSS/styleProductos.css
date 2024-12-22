@@ -16,7 +16,7 @@ h2{
 }
 h3{
     font-size:large;
-    color: black
+    color: white;
 }
 
 /*ENCABEZADO*/
@@ -73,15 +73,17 @@ main{
 /*PRODUCTOS*/
 #productos{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    width: 900px;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto, 1fr);
     background-color: white;
     padding: 10px; border-radius: 8px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
+    gap: 20px;
 }
 /* CARDS */
-.card-{
+.card{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,7 +91,7 @@ main{
     border: 1px solid #d1d5db;
     border-radius: 8px;
     padding: 16px;
-    max-width: 300px;
+    max-width: 250px;
     margin: 16px auto;
     background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -113,11 +115,11 @@ main{
     margin-bottom: 15px;
 }
 .pie-tarjeta {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    gap: 5px;
+    /* gap: 5px; */
 }
 .pie-tarjeta p {
     font-size: 1rem;
@@ -132,26 +134,24 @@ main{
     padding: 2px 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 130PX;
 }
 .btnAgregarCarrito:hover {
     background-color: #1d4ed8;
 }
-/*CARDS*/
-.card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-8, .card-9, .card-10, .card-11, .card-12, .card-13, .card-14, .card-15, .card-16, .card-17, .card-18, .card-19, .card-20{
-    border: 2px solid black;
-    margin: 5px;
-    padding: 5px;
-    background-color: white;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 8px;
-    max-width: 300px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-} */
+.card.agotado {
+    opacity: 0.5;
+}
+.card.agotado .btnAgregarCarrito {
+    background-color: gray;
+    color: white;
+    cursor: not-allowed;
+}
+
+.card .btnAgregarCarrito:disabled {
+    background-color: gray;
+    color: white;
+}
 
 article{
     background-color: lightgrey;
@@ -279,7 +279,7 @@ h2 {
 /* CONTACTOS*/
 footer{
     display: flex;
-    background-color: lightgray;
+    background: linear-gradient(black,darkgrey);
     padding: 10px;
     justify-content: center;
 }
@@ -303,7 +303,7 @@ footer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(auto, 1fr);
-        
+        width: 600px;
     } 
 
     article{

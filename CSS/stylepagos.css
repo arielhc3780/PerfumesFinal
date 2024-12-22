@@ -19,7 +19,7 @@ h2{
 }
 h3{
     font-size:large;
-    color: black;
+    color: white;
 }
 
 /*ENCABEZADO*/
@@ -87,7 +87,7 @@ article{
 footer{
     height: 100px;
     display: flex;
-    background-color: lightgray;
+    background: linear-gradient(black,darkgrey);
     padding: 10px;
     justify-content: center;
 }

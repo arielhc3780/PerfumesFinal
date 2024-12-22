@@ -17,7 +17,7 @@ h2{
 }
 h3{
     font-size:large;
-    color: black;
+    color: white;
 }
 
 /*ENCABEZADO*/
@@ -69,7 +69,7 @@ main{
 
 /*NOSOTROS MAIN*/
 .nosotros-texto{
-    flex: 5;
+    flex: 3;
     padding: 0px 0 0 0;
     margin: 0 0 0 10px;
 }
@@ -82,7 +82,7 @@ main{
 
 /*IMAGEN MAIN*/
 .nosotros-imagen{
-    flex: 7;
+    flex: 9;
     margin: 0 10px 0 0;
 }
 
@@ -254,7 +254,7 @@ width: 50px;
     background-color: lightgrey;
     padding-top: 30px;
 }
-/* CARDS */
+/* CARDS RESEÑAS*/
 .card-resenia-1, .card-resenia-2, .card-resenia-3, .card-resenia-4, .card-resenia-5, .card-resenia-6{
     border: 2px dashed black;
     border-radius: 10px;
@@ -312,7 +312,7 @@ cite{
 /* CONTENEDOR CONTACTOS */
 footer{
     display: flex;
-    background-color: lightgray;
+    background: linear-gradient(black,darkgrey);
     padding: 10px;
     justify-content: center;
 }
