@@ -1,5 +1,5 @@
 
-    // Función para verificar el tamaño de la ventana y cambiar el texto
+    // Función para verificar el tamaño de la ventana y elimina "novedades" del h2 si el ancho es menor a 800px
     
     function ajustarTextoH2() {
         const h2 = document.querySelector('.novedades-y-consultas h2');

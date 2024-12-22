@@ -4,7 +4,9 @@
     margin: 0;
     font-family: "Roboto Flex", sans-serif;
 }
-
+body{
+    background-color: lightgrey;
+}
 /*TITULOS*/
 h1{
     color: #D4AF37;
@@ -20,6 +22,7 @@ h3{
     color: black;
 }
 
+/*ENCABEZADO*/
 header{
     position: fixed;
     top:0;
@@ -32,25 +35,27 @@ header{
     justify-content: space-between;
     padding: 0.5rem;
 }
-
-/*ENCABEZADO MENU*/
-
+/*NAV MENU*/
 .nav-list{
     display: flex;
-    list-style-type: none;
     gap: 1rem;
-    justify-items: center;
+    text-decoration: none;
+    color: red;
 }
-.nav-list li a{
+.nav-list a{
+    color: white;
+    text-decoration: none;
+}
+.nav-list :hover{
     text-decoration: none;
     color: white;
 }
-
+/* ABRE Y CIERRA HAMBUGUESA */
 .menu-abrir,
 .menu-cerrar{
     display: none;
 }
-
+/* MAIN */
 main{
     padding-top: 50px;
     background-color: lightgrey;
@@ -61,13 +66,9 @@ main{
     height: 200px;
 }
 
-/* .titulo-main{
-    position: fixed;
-    top:50px;
-} */
-.titulo-main h3{
+.titulo-main p{
     font-size: 100px;
-    /* padding-top: 10px; */
+    color: orange;
 }
 
 article{
@@ -80,18 +81,16 @@ article{
 
 .icon i{
     color: orange;
-    font-size: 12rem;
+    font-size: 10rem;
 }
-
+/* CONTACTOS */
 footer{
     height: 100px;
     display: flex;
     background-color: lightgray;
     padding: 10px;
     justify-content: center;
-
 }
-/*FOOTER CONTENIDO*/
 .contatos-titulo{ 
     justify-items: center;
 }

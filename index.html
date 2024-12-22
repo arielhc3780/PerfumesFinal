@@ -38,16 +38,16 @@
                     <li><a href="productos.html"><i class="fa-solid fa-list"></i> Productos</a></li>
                     
                     <li><a href="#contacto"><i class="fa-solid fa-address-book"></i></i> Contactos</a></li>
-                    
                 </ul>
             </nav>
         </div>
-
-        <button class="menu-abrir" id="abrir"><i class="bi bi-list"></i></button>
+        <!-- BOTON ABRIR HAMBURGUESA -->
+        <Button class="menu-abrir" id="abrir"><i class="bi bi-list"></i></Button>
     </header> 
 
 <!-- NOSOTROS Y PRODUCTOS -->
     <main>
+<!-- TITULO -->
         <div class="nosotros-titulo">
             <h2>Nosotros</h2>
         </div>
@@ -124,7 +124,7 @@
         </div>
     </main>
 
-    <!-- RECOMENDACIONES Y NOSOTROS -->
+    <!-- RECOMENDACIONES -->
     <aside>
         <div class="recomendaciones-video">
             <iframe src="https://www.youtube.com/embed/Nj5DCrwnDko?si=QVvGtjrgXkBM_jkh" title="YouTube video player"
@@ -134,11 +134,11 @@
 
 <!-- NOVEDADES Y CONSULTSA -->
     <article>
+<!-- TITULO -->
         <div class="novedades-y-consultas">
             <h2>Novedades y Consultas</h2>
         </div>
-    
-        <!-- NOVEDADES -->
+<!-- NOVEDADES -->
         <div class="novedades-y-consultas-contenedor">
             <div class="tabla">
                 <table>
@@ -171,53 +171,46 @@
                     </tr>
                 </table>
             </div>
-    <!-- CONSULTAS -->
+<!-- CONSULTAS -->
             <div class="consultas">
                 <form action="https://formspree.io/f/movqqwkr" method="post">
                     
                     <div class="formulario">
                         <label for="nombre">Nombre:</label>
                         <input type="text" name="nombre" placeholder=" Escriba su nombre" id="nombre" required>
-
                         <label for="email">Email:</label>
                         <input type="email" name="email" placeholder=" Escriba su mail" id="email" required>
-
                         <label for="mensaje">Mensaje:</label>
                         <textarea name="mensaje" placeholder=" Escriba su consulta aqui" id="mensaje"
                             required></textarea>
-                        
                         <div class="edad-container">
                             <label class="edad" for="edad">Edad:</label>
-                            <input type="text" name="edad" placeholder=" Años" id="edad" required>
+                                <input type="text" name="edad" placeholder=" Años" id="edad" required>
                         </div>
-
                         <div class="radio">
                             <label for="gender-hombre">
                                 <input id="gender-hombre" type="radio" name="gender" value="hombre"> Hombre
                             </label>
-                        
                             <label for="gender-mujer">
                                 <input id="gender-mujer" type="radio" name="gender" value="mujer"> Mujer
                             </label>
-                        
                             <label for="gender-otro">
                                 <input id="gender-otro" type="radio" name="gender" value="otro"> Niños\as
                             </label>
                         </div>
-                        
                         <div class="fboton">
                             <button type="submit">Enviar</button>
                             <button type="reset">Borrrar</button>
                         </div>
                     </div>
-                    
+<!-- ACA PONE LOS ERRORES -->
                     <div id="errorMessages" class="errorform"></div>
                 </form>
             </div>
         </div>
     </article>
 
-    <!-- RESEÑAS -->
+<!-- RESEÑAS -->
     <section>
         <div class="resenias">
             <div class="card-resenia-1">
@@ -269,31 +262,29 @@
             </div>
         </div>
     </section>
-<!-- CONTACTO Y PIE -->
-<footer>
-    <section id="contacto">
-        <div class="contatos-titulo">
-            <h3>Contactos</h3>
-        </div>
-
-        <div class="contactos-link">
-            
-            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            
-            <a href="https://api.whatsapp.com/send?phone=0123456789" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            
-            <a href="https://t.me/" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-            <a href="https://mail.to" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-    </section>
-
-</footer>
+<!-- CONTACTOS -->
+    <footer>
+        <section id="contacto">
+            <!-- TITULO -->
+            <div class="contatos-titulo">
+                <h3>Contactos</h3>
+            </div>
+            <div class="contactos-link">
+                <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i      class="fa-brands fa-facebook"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=0123456789" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://t.me/" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://mail.to" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://maps.app.goo.gl/si2thBw3VwpgHVqA8" target="_blank"><i class="bi bi-map"></i></a>
+            </div>
+        </section>
+    </footer>
 
 <!-- SCRIPTS -->
-    <script src="JS/scriptmenu.js"></script>
-    <script src="JS/scriptform.js"></script>
-    <script src="JS/script.js"></script>
-    
+<script src="JS/scriptmenu.js"></script>
+<script src="JS/scriptform.js"></script>
+<script src="JS/script.js"></script>
+
 </body>
 
 </html>

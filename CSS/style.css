@@ -59,7 +59,7 @@ main{
     padding-top: 80px;
     background-color: lightgrey;
 }
-/*SEPARACION*/
+/*CONTENEDOR MAIN*/
 .nosotros-contenedor{
     display: flex;
     align-items:center;
@@ -67,12 +67,10 @@ main{
     gap: 20px;
 }
 
-/*SEPARACION TEXTO*/
+/*NOSOTROS MAIN*/
 .nosotros-texto{
     flex: 5;
     padding: 0px 0 0 0;
-    /* width: 350px;
-    height: auto; */
     margin: 0 0 0 10px;
 }
 
@@ -82,19 +80,17 @@ main{
     border-radius: 8px;
 }
 
-    /*SEPARACION IMAGEN*/
+/*IMAGEN MAIN*/
 .nosotros-imagen{
     flex: 7;
-    margin: 0 10px 0 0 ;
-    /* padding: 0 0px 0 0; */
-    
+    margin: 0 10px 0 0;
 }
 
 .nosotros-imagen img{
     width: 600px;
     height: auto;
 }
-
+/* PRODUCTOS MAIN */
 .productos{
     margin-top: 10px;
 }
@@ -153,20 +149,20 @@ aside{
     width: 600px;
     height: 250px;
 }
-
+/*NOVEDADES Y CONSULTAS*/
 article{
     text-align:center;
     padding-top: 10px;
     background-color: lightgrey;
 }
+/* CONTENEDOR ARTICLE */
 .novedades-y-consultas-contenedor{
     display: flex;
     align-items: top;
     justify-content: center;
     gap: 20px;
 }
-
-/*TABLA*/
+/*CONTERDOR TABLA*/
 .tabla{
     flex:6;
     width: 50%;
@@ -175,7 +171,6 @@ article{
     height: 100%;
     width: 100%;
 }
-
 table,
 tr,
 th{
@@ -185,20 +180,21 @@ th{
     width: 100%;
     background-color:lightgrey;
 }
-
-
 th{
     width: 20px;
 }
-
 table img{
     width: 100px;
     height: 100px;
     margin: 12px;
 }
 
-/*FORMULARIO*/
-
+/* CONTENEDOR CONSULTAS */
+.consultas{
+    flex: 6;
+    width: auto;
+    padding: 0 20px 0 0;
+}
 .formulario{
 display: flex;
 flex-direction: column;
@@ -210,49 +206,36 @@ border-radius: 10px;
 box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 transition: background-color 0.3s ease;
 }
-
 .titulo-form{
     background-color: lightgrey;
 }
-
 .formulario .fboton{
     display: flex;
     gap: 10px;
 }
-
 .formulario .fboton button{
     width: 100%;
     height: 50px;
     display: inline;
-}
-
-.consultas{
-    flex: 6;
-    width: auto;
-    padding: 0 20px 0 0;
 }
 .radio{
     display: flex;
     gap: 2rem;
     justify-content: center;
 }
-
 #mensaje{
     max-height: 100px;
     min-height: 100px;
     max-width: 600px;
     min-width: 400px;
 }
-
-formulario .edad-container {
+#formulario .edad-container {
         display: flex;
         align-items: center;
 }
-
 #edad{   
 width: 50px;
 }
-
 #errorMessages{
     color: red; 
     margin-top: 1px;
@@ -263,6 +246,7 @@ width: 50px;
     padding: 1px;
 }
 
+/* CONTENEDOR DE RESENIAS */
 .resenias{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -270,19 +254,14 @@ width: 50px;
     background-color: lightgrey;
     padding-top: 30px;
 }
-
-.card-resenia-1,
-.card-resenia-2,
-.card-resenia-3,
-.card-resenia-4,
-.card-resenia-5,
-.card-resenia-6{
+/* CARDS */
+.card-resenia-1, .card-resenia-2, .card-resenia-3, .card-resenia-4, .card-resenia-5, .card-resenia-6{
     border: 2px dashed black;
     border-radius: 10px;
     padding: 5px;
     margin: 5px;
 }
-
+/* UBICACION DE LAS CARDS */
 .card-resenia-1{
     color: black ;
     grid-column-start:1 ;
@@ -290,7 +269,6 @@ width: 50px;
     grid-row-start: 1;
     grid-row-end: 3;
 }
-
 .card-resenia-2{
     color: black ;
     grid-column-start:2 ;
@@ -298,7 +276,6 @@ width: 50px;
     grid-row-start: 1;
     grid-row-end: 2;
 }
-
 .card-resenia-3{
     color: black ;
     grid-column-start:3 ;
@@ -306,7 +283,6 @@ width: 50px;
     grid-row-start: 1;
     grid-row-end: 2;
 }
-
 .card-resenia-4{
     color: black ;
     grid-column-start:2 ;
@@ -314,7 +290,6 @@ width: 50px;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-
 .card-resenia-5{
     color: black ;
     grid-column-start:3 ;
@@ -322,7 +297,6 @@ width: 50px;
     grid-row-start: 2;
     grid-row-end: 4;
 }
-
 .card-resenia-6{
     color: black;
     grid-column-start:1 ;
@@ -330,22 +304,21 @@ width: 50px;
     grid-row-start: 3;
     grid-row-end: 4;
 }
-
+/* CITAS DE LAS CARDS */
 cite{
     color: darkgrey;
 }
 
+/* CONTENEDOR CONTACTOS */
 footer{
     display: flex;
     background-color: lightgray;
     padding: 10px;
     justify-content: center;
 }
-
 .contatos-titulo{ 
     justify-items: center;
 }
-
 .contactos-link{
     display: flex;
     gap: 20px;
@@ -353,7 +326,6 @@ footer{
 
 /*MEDIAS QUERY*/
 @media (800px > width){
-
     .nosotros-contenedor,
     .novedades-y-consultas-contenedor,
     .tarjetas{
@@ -367,7 +339,6 @@ footer{
         justify-items: center;
         padding: 10px 0;
     }
-
     .tabla{
         display: none;
     }
@@ -377,7 +348,6 @@ footer{
     header{
         display: flex;
     }
-
     .nav{
         opacity: 0;
         visibility: hidden;
@@ -403,7 +373,6 @@ footer{
     .nav-list li a{
         color: black;
     }
-    
     .menu-abrir,
     .menu-cerrar{
         display: block;

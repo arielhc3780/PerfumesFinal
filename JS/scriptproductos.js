@@ -1,3 +1,4 @@
+//creamos un array de objetos con los productos que se van a mostrar en la página
 const productos = [
     {
         nombre: "Savage",
@@ -72,6 +73,7 @@ const productos = [
         valor: 100000,
     },
 ]
+//creamos un string vacío para almacenar el HTML que se va a generar
 let productosHTML = "";
 for(let indice = 0; indice < productos.length; indice++){
     productosHTML += `
@@ -92,6 +94,6 @@ for(let indice = 0; indice < productos.length; indice++){
         </div>
     `
 }
-
+//seleccionamos el contenedor de los cursos y le asignamos el HTML generado
 const contenedorCursos = document.getElementById("productos");
 contenedorCursos.innerHTML = productosHTML;
