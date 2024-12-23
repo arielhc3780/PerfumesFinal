@@ -115,7 +115,6 @@ function irAPagar() {
         alert('No puedes proceder con el pago sin productos en el carrito.');
     } else {
         window.location.href = "./pagos.html";
-        console.log("Ir a pagar");
     }
 
 }
